@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@android:color/background_light"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:background="@drawable/shape"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_contact"
+            android:id="@+id/imageView3"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/linearLayout"
+            android:layout_toEndOf="@+id/linearLayout"
+            android:layout_marginLeft="1dp"
+            android:layout_marginStart="1dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/pseudo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                tools:text="Pseudo"
+                android:layout_marginLeft="12dp"
+                android:textSize="18sp"
+                android:layout_alignTop="@+id/imageView3"
+                android:layout_alignLeft="@+id/text"
+                android:layout_alignStart="@+id/text" />
+
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                tools:text="Numero de Telephone        "
+                android:textSize="18sp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_alignBottom="@+id/pseudo"
+                android:layout_toRightOf="@+id/pseudo"
+                android:layout_toEndOf="@+id/pseudo" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_pencil01"
+            android:padding="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/buttonEdit"
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="54dp"
+            android:src="@mipmap/ic_deletefin"
+            android:id="@+id/buttonDelete"
+            android:padding="12dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:visibility="invisible"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
